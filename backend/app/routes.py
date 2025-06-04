@@ -3,6 +3,11 @@ from .models import Task
 from .models import TeamMember
 from . import db
 from datetime import datetime
+from flask import Flask
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app)
 
 main = Blueprint('main', __name__)
 
